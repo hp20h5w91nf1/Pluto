@@ -189,16 +189,11 @@ end
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
 DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
-Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
-JolinPluto = "5b0b4ef8-f4e6-4363-b674-3f031f7b9530"
 Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
-PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
 DataStructures = "~0.18.15"
-JolinPluto = "~0.1.58"
 Plots = "~1.39.0"
-PlutoUI = "~0.7.54"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
@@ -207,13 +202,7 @@ PLUTO_MANIFEST_TOML_CONTENTS = """
 
 julia_version = "1.9.4"
 manifest_format = "2.0"
-project_hash = "8c5969c88051571cd93b031ac231c478093eb5bd"
-
-[[deps.AbstractPlutoDingetjes]]
-deps = ["Pkg"]
-git-tree-sha1 = "793501dcd3fa7ce8d375a2c878dca2296232686e"
-uuid = "6e696c72-6542-2067-7265-42206c756150"
-version = "1.2.2"
+project_hash = "576bde76605a9df365a1d389a5c97e34dfddd100"
 
 [[deps.ArgTools]]
 uuid = "0dad84c5-d112-42e6-8d28-ef12dabb789f"
@@ -299,12 +288,6 @@ git-tree-sha1 = "8cfa272e8bdedfa88b6aefbbca7c19f1befac519"
 uuid = "f0e56b4a-5159-44fe-b623-3e5288b988bb"
 version = "2.3.0"
 
-[[deps.Continuables]]
-deps = ["DataTypesBasic", "ExprParsers", "OrderedCollections", "SimpleMatch"]
-git-tree-sha1 = "96107b5ecb77d0397395cec4a95a28873e124204"
-uuid = "79afa230-ca09-11e8-120b-5decf7bf5e25"
-version = "1.0.3"
-
 [[deps.Contour]]
 git-tree-sha1 = "d05d9e7b7aedff4e5b51a029dced05cfb6125781"
 uuid = "d38c429a-6771-53c6-b99e-75d170b6e991"
@@ -320,11 +303,6 @@ deps = ["Compat", "InteractiveUtils", "OrderedCollections"]
 git-tree-sha1 = "3dbd312d370723b6bb43ba9d02fc36abade4518d"
 uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
 version = "0.18.15"
-
-[[deps.DataTypesBasic]]
-git-tree-sha1 = "0ebf9d9def6135849a9da8d2a1f144d0c467b81c"
-uuid = "83eed652-29e8-11e9-12da-a7c29d64ffc9"
-version = "2.0.3"
 
 [[deps.Dates]]
 deps = ["Printf"]
@@ -364,12 +342,6 @@ deps = ["Artifacts", "JLLWrappers", "Libdl"]
 git-tree-sha1 = "4558ab818dcceaab612d1bb8c19cee87eda2b83c"
 uuid = "2e619515-83b5-522b-bb60-26c02a35a201"
 version = "2.5.0+0"
-
-[[deps.ExprParsers]]
-deps = ["ProxyInterfaces", "SimpleMatch", "StructEquality"]
-git-tree-sha1 = "d7508fa0337cee19e380ad5fbc7ac698ecc471ba"
-uuid = "c5caad1f-83bd-4ce8-ac8e-4b29921e994e"
-version = "1.2.3"
 
 [[deps.FFMPEG]]
 deps = ["FFMPEG_jll"]
@@ -440,18 +412,6 @@ git-tree-sha1 = "9b02998aba7bf074d14de89f9d37ca24a1a0b046"
 uuid = "78b55507-aeef-58d4-861c-77aaff3498b1"
 version = "0.21.0+0"
 
-[[deps.Git]]
-deps = ["Git_jll"]
-git-tree-sha1 = "51764e6c2e84c37055e846c516e9015b4a291c7d"
-uuid = "d7ba0133-e1db-5d97-8f8c-041e4b3a1eb2"
-version = "1.3.0"
-
-[[deps.Git_jll]]
-deps = ["Artifacts", "Expat_jll", "JLLWrappers", "LibCURL_jll", "Libdl", "Libiconv_jll", "OpenSSL_jll", "PCRE2_jll", "Zlib_jll"]
-git-tree-sha1 = "bb8f7cc77ec1152414b2af6db533d9471cfbb2d1"
-uuid = "f8c6e375-362e-5223-8a59-34ff63f689eb"
-version = "2.42.0+0"
-
 [[deps.Glib_jll]]
 deps = ["Artifacts", "Gettext_jll", "JLLWrappers", "Libdl", "Libffi_jll", "Libiconv_jll", "Libmount_jll", "PCRE2_jll", "Zlib_jll"]
 git-tree-sha1 = "e94c92c7bf4819685eb80186d51c43e71d4afa17"
@@ -481,24 +441,6 @@ git-tree-sha1 = "129acf094d168394e80ee1dc4bc06ec835e510a3"
 uuid = "2e76f6c2-a576-52d4-95c1-20adfe4de566"
 version = "2.8.1+1"
 
-[[deps.Hyperscript]]
-deps = ["Test"]
-git-tree-sha1 = "8d511d5b81240fc8e6802386302675bdf47737b9"
-uuid = "47d2ed2b-36de-50cf-bf87-49c2cf4b8b91"
-version = "0.0.4"
-
-[[deps.HypertextLiteral]]
-deps = ["Tricks"]
-git-tree-sha1 = "7134810b1afce04bbc1045ca1985fbe81ce17653"
-uuid = "ac1192a8-f4b3-4bfe-ba22-af5b92cd3ab2"
-version = "0.9.5"
-
-[[deps.IOCapture]]
-deps = ["Logging", "Random"]
-git-tree-sha1 = "d75853a0bdbfb1ac815478bacd89cd27b550ace6"
-uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
-version = "0.2.3"
-
 [[deps.InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
@@ -525,36 +467,6 @@ deps = ["Dates", "Mmap", "Parsers", "Unicode"]
 git-tree-sha1 = "31e996f0a15c7b280ba9f76636b3ff9e2ae58c9a"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.21.4"
-
-[[deps.JSON3]]
-deps = ["Dates", "Mmap", "Parsers", "PrecompileTools", "StructTypes", "UUIDs"]
-git-tree-sha1 = "95220473901735a0f4df9d1ca5b171b568b2daa3"
-uuid = "0f8b85d8-7281-11e9-16c2-39a750bddbf1"
-version = "1.13.2"
-
-[[deps.JWTs]]
-deps = ["Base64", "Downloads", "JSON", "MbedTLS", "Random"]
-git-tree-sha1 = "4b4111b7d649426874d4eec78f87871f90f8e541"
-uuid = "d850fbd6-035d-5a70-a269-1ca2e636ac6c"
-version = "0.2.3"
-
-[[deps.JolinPluto]]
-deps = ["AbstractPlutoDingetjes", "Base64", "Continuables", "Dates", "Git", "HTTP", "HypertextLiteral", "JSON3", "JWTs", "UUIDs"]
-git-tree-sha1 = "5406ce394a65b8e01c160da059ab11b7bb6e1d15"
-uuid = "5b0b4ef8-f4e6-4363-b674-3f031f7b9530"
-version = "0.1.58"
-
-    [deps.JolinPluto.extensions]
-    AWSExt = "AWS"
-    PlotsExt = "Plots"
-    PythonExt = "PythonCall"
-    RCallExt = "RCall"
-
-    [deps.JolinPluto.weakdeps]
-    AWS = "fbe9abb3-538b-5e4e-ba9e-bc94f4f92ebc"
-    Plots = "91a5bcdd-55d7-5caf-9e0b-520d859cae80"
-    PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
-    RCall = "6f49c342-dc21-5d91-9882-a32aef131414"
 
 [[deps.JpegTurbo_jll]]
 deps = ["Artifacts", "JLLWrappers", "Libdl"]
@@ -704,11 +616,6 @@ git-tree-sha1 = "c1dd6d7978c12545b4179fb6153b9250c96b0075"
 uuid = "e6f89c97-d47a-5376-807f-9c37f3926c36"
 version = "1.0.3"
 
-[[deps.MIMEs]]
-git-tree-sha1 = "65f28ad4b594aebe22157d6fac869786a255b7eb"
-uuid = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
-version = "0.1.4"
-
 [[deps.MacroTools]]
 deps = ["Markdown", "Random"]
 git-tree-sha1 = "9ee1618cbf5240e6d4e0371d6f24065083f60c48"
@@ -856,12 +763,6 @@ version = "1.39.0"
     ImageInTerminal = "d8c32880-2388-543b-8c61-d9f865259254"
     Unitful = "1986cc42-f94f-5a68-af5c-568840ba703d"
 
-[[deps.PlutoUI]]
-deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "bd7c69c7f7173097e7b5e1be07cee2b8b7447f51"
-uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.54"
-
 [[deps.PrecompileTools]]
 deps = ["Preferences"]
 git-tree-sha1 = "03b4c25b43cb84cee5c90aa9b5ea0a78fd848d2f"
@@ -877,11 +778,6 @@ version = "1.4.1"
 [[deps.Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
-
-[[deps.ProxyInterfaces]]
-git-tree-sha1 = "848a4470b54820cba8c4642840e9cea8345ff520"
-uuid = "9b3bf0c4-f070-48bc-ae01-f2584e9c23bc"
-version = "1.1.1"
 
 [[deps.Qt6Base_jll]]
 deps = ["Artifacts", "CompilerSupportLibraries_jll", "Fontconfig_jll", "Glib_jll", "JLLWrappers", "Libdl", "Libglvnd_jll", "OpenSSL_jll", "Vulkan_Loader_jll", "Xorg_libSM_jll", "Xorg_libXext_jll", "Xorg_libXrender_jll", "Xorg_libxcb_jll", "Xorg_xcb_util_cursor_jll", "Xorg_xcb_util_image_jll", "Xorg_xcb_util_keysyms_jll", "Xorg_xcb_util_renderutil_jll", "Xorg_xcb_util_wm_jll", "Zlib_jll", "libinput_jll", "xkbcommon_jll"]
@@ -950,11 +846,6 @@ git-tree-sha1 = "874e8867b33a00e784c8a7e4b60afe9e037b74e1"
 uuid = "777ac1f9-54b0-4bf8-805c-2214025038e7"
 version = "1.1.0"
 
-[[deps.SimpleMatch]]
-git-tree-sha1 = "78750b67a6cb3b6140be99f2fb56ae26ad28104b"
-uuid = "a3ae8450-d22f-11e9-3fe0-77240e25996f"
-version = "1.1.0"
-
 [[deps.Sockets]]
 uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
 
@@ -984,18 +875,6 @@ deps = ["DataAPI", "DataStructures", "LinearAlgebra", "LogExpFunctions", "Missin
 git-tree-sha1 = "1d77abd07f617c4868c33d4f5b9e1dbb2643c9cf"
 uuid = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
 version = "0.34.2"
-
-[[deps.StructEquality]]
-deps = ["Compat"]
-git-tree-sha1 = "192a9f1de3cfef80ab1a4ba7b150bb0e11ceedcf"
-uuid = "6ec83bb0-ed9f-11e9-3b4c-2b04cb4e219c"
-version = "2.1.0"
-
-[[deps.StructTypes]]
-deps = ["Dates", "UUIDs"]
-git-tree-sha1 = "ca4bccb03acf9faaf4137a9abc1881ed1841aa70"
-uuid = "856f2bd8-1eba-4b0a-8007-ebc267875bd4"
-version = "1.10.0"
 
 [[deps.SuiteSparse_jll]]
 deps = ["Artifacts", "Libdl", "Pkg", "libblastrampoline_jll"]
@@ -1030,11 +909,6 @@ weakdeps = ["Random", "Test"]
 
     [deps.TranscodingStreams.extensions]
     TestExt = ["Test", "Random"]
-
-[[deps.Tricks]]
-git-tree-sha1 = "eae1bb484cd63b36999ee58be2de6c178105112f"
-uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
-version = "0.1.8"
 
 [[deps.URIs]]
 git-tree-sha1 = "67db6cc7b3821e19ebe75791a9dd19c9b1188f2b"
@@ -1379,7 +1253,6 @@ PLUTO_CONDAPKG_TOML_CONTENTS = """
 # ╟─bd6e7590-b9a4-4d07-86e7-ed6a28a3da0d
 # ╟─084b7ac4-6874-48fa-a79d-24fb13490bf9
 # ╟─ef0a6231-faac-42f3-af5a-f0dd168538f6
-# ╠═b9e65ffc-18c4-48ca-a657-13bdcfa338ac
 # ╠═30ae245f-f4a8-4aa2-8992-d564e5d0f563
 # ╟─e6f1e1ef-8fc9-46f8-a7a9-9e174305de09
 # ╠═698985dd-b081-4da8-a3ba-ac35a2e86b59
